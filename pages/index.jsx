@@ -1,1152 +1,708 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WDX6PDDP');</script>
-<!-- End Google Tag Manager -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17012307429"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17012307429');
-</script>
-
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My School Ride - School Bus IT Solution</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-<!-- custom CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
-<link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
-<link href="css/jquery.fancybox.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/pro.css">
-<link href="css/animate.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<script src="js/jquery.min.js"></script>
-<script>
-     window.addEventListener('load', function()
-    {
-        url = new URL(window.location.href);
-        var campaign_name = url.searchParams.get("utm_campaign");
-        var keyword = url.searchParams.get("utm_keyword");
-        var source = url.searchParams.get("utm_source");
-        var network = url.searchParams.get("utm_network");
-        var utm_medium = url.searchParams.get("utm_medium");
-        
-        document.getElementById("campaign_url").value = window.location.href;
-        document.getElementById("campaign_name").value = campaign_name;
-        document.getElementById("keyword").value = keyword;
-        document.getElementById("sourceId").value = source;
-        document.getElementById("network").value = network;
-        document.getElementById("utm_medium").value = utm_medium;
-      
-        document.getElementById("campaign_url1").value = window.location.href;
-        document.getElementById("campaign_name1").value = campaign_name;
-        document.getElementById("keyword1").value = keyword;
-        document.getElementById("sourceId1").value = source;
-        document.getElementById("network1").value = network;
-        document.getElementById("utm_medium1").value = utm_medium;
-
-        document.getElementById("campaign_url2").value = window.location.href;
-        document.getElementById("campaign_name2").value = campaign_name;
-        document.getElementById("keyword2").value = keyword;
-        document.getElementById("sourceId2").value = source;
-        document.getElementById("network2").value = network;
-        document.getElementById("utm_medium2").value = utm_medium;
-
-        document.getElementById("campaign_url3").value = window.location.href;
-        document.getElementById("campaign_name3").value = campaign_name;
-        document.getElementById("keyword3").value = keyword;
-        document.getElementById("sourceId3").value = source;
-        document.getElementById("network3").value = network;
-        document.getElementById("utm_medium3").value = utm_medium;
-        
-        if (document.referrer)
-        {
-            var myReferer = document.referrer;
-            document.getElementById("referrerid").value = myReferer;
-            document.getElementById("referrerid1").value = myReferer;
-            document.getElementById("referrerid2").value = myReferer;
-            document.getElementById("referrerid3").value = myReferer;
-        }
-        else
-        {
-            document.getElementById("referrerid").value = 'None';
-            document.getElementById("referrerid1").value = 'None';
-            document.getElementById("referrerid2").value = 'None';
-            document.getElementById("referrerid3").value = 'None';
-        }
-    })
-    </script>
-   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    fetch('csrf-token.php')
-      .then(response => response.json())
-      .then(data => {
-        const csrfInput = document.createElement('input');
-        csrfInput.type = 'hidden';
-        csrfInput.name = 'csrf_token';
-        csrfInput.value = data.csrf_token;
-        const form = document.querySelector('form');
-        if (form) {
-          form.appendChild(csrfInput);
-        }
-      });
-  });
-</script>
-
-
-<script src="https://www.google.com/recaptcha/api.js?render=6LcXywkrAAAAAFG81MXm6kQQNd5qwBigOp2wgdU8"></script>
-
-</head>
-<body>
-	
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDX6PDDP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-	
-<header id="header" class="header">
-<div class="header-absolute position-absolute zIndex2 w-100">
-<div class="container">
-<div class="top-head">
-<div class="row align-items-center">
-<div class="col-lg-3 col-md-3 col-12"> 
-  <div class="logo">
-<img class="img-fluid" src="images/www.satcop.com (12).png" alt="" style="width: 50%;"/>
-</div>
-</div>
-
-<div class="col-lg-6 col-md-4 col-12 center__head text-center"> 
-<strong class="white-col font-weight-400">AI Based Smart School Solutions</strong>
-</div>
-
-<div class="col-lg-3 col-md-3 col-12 callus_back text-end desktop"> 
-<button style="padding: 15px 15px 15px 15px; border-radius: 25px; background-color:#0097b2; border: none;" ><a class="white-col font-weight-400 " href="tel:8600002222" ><span><i class="far fa-phone-volume" style="color: black;"></i></span>+91 860 000 2222</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
-
-<!-- Hero section start (Slider) -->
-<section class="hero-sectionn position-relative">
-<div class="bc-img01">
-<div class="container">
-  <div class="position-relative mobile-gps-rel desktop">
-    <div class="mobile-gps_ab jumping_ani">
-      <img class="img-fluid" src="images/mobile-gps.png" alt=""/>
-    </div>
-  </div>
-<div class="row">
-<div class="col-lg-6 col-md-12 leftsec_content">
-<div class="dsu-addmission">
-<div class="bannerContent position-relative">
-<h1 class="text-white font-weight-700 wow fadeInUp" data-wow-delay="0ms">Smart School<br/>Solution</h1>
-
-<div class="bnr_listing w-50 wow fadeInUp mt-3" data-wow-delay="300ms">
-  <ul>
-    <li><span><img src="images/icon1.png" alt=""/></span>Realtime Bus Tracking</li>
-    <li><span><img src="images/icon2.png" alt=""/></span>CCTV/Dashcam Monitoring</li>
-    <li><span><img src="images/icon3.png" alt=""/></span>Instant Alerts & Notifications</li>
-    <li><span><img src="images/icon4.png" alt=""/></span>RFID Automated Attendance</li>
-    <li><span><img src="images/icon5.png" alt=""/></span>Comprehensive Reports</li>
-    <li><span><img src="images/icon6.png" alt=""/></span>Automated School Attendance </li>
-  </ul>
-</div>
-</div>
-</div>
-</div>
-
-<div class="col-lg-6 col-md-12 leftsec_form">
-<div class="dsu-intro">
-<div id="applyBox" class="wow fadeInUp">
-<div class="applyBox">
-<div class="dsu-form shadow">
-<div class="frmBg">
-<h4 class="fsize24 text-white font-weight-600">Get a Demo</h4>
-</div>
-<div class="contact_fild p-4 pb-0">
-<form id="formID" name="contact-form" method="post" action="Contact-myschoolride.php">
-  <div class="formIDfid">
-
-    <div class="contact-fild-box">
-      <div class="form-group">
-        <input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*" type="text">
-      </div>
-    </div>
-
-    <div class="contact-fild-box">
-      <div class="form-group">
-        <input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30" type="text">
-      </div>
-    </div>
-
-    <div class="contact-fild-box">
-      <div class="form-group">
-        <input name="phone" id="phone" maxlength="10" placeholder="Mobile*" class="form-control validate[required, custom[phone]]" type="tel">
-      </div>
-    </div>
-
-    <div class="contact-fild-box">
-      <div class="form-group">
-        <input name="school_name" class="form-control validate[required, custom[name]]" placeholder="School Name*" type="text">
-      </div>
-    </div>
-
-    <div class="contact-fild-box">
-      <div class="form-group">
-        <select name="bus_count" class="form-control validate[required]">
-          <option value="" disabled selected>Number of Buses*</option>
-          <option value="1-5">1 - 5</option>
-          <option value="6-10">6 - 10</option>
-          <option value="11-20">11 - 20</option>
-          <option value="21-50">21 - 50</option>
-          <option value="50+">50+</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="contact-fild-box">
-      <div class="form-group">
-        <input name="city" class="form-control validate[required, custom[name]]" placeholder="Your City*" type="text">
-      </div>
-    </div>
-
-    <div class="g-recaptcha" data-sitekey="6Ld8Jl4pAAAAAC31nhZrxEOs8B2vWucXUgAzaL5_"></div>
-
-    <div class="contact-fild-box text-center mt-4">
-      <div class="form-group">
-        <input id="referrerid"    name="referrer_name"  type="hidden" value="">
-        <input id="keyword"       name="keyword"        type="hidden" value="">
-        <input id="network"       name="network"        type="hidden" value="">
-        <input id="campaign_url"  name="campaign_url"   type="hidden" value="">
-        <input id="campaign_name" name="campaign_name"  type="hidden" value="">
-        <input id="sourceId"      name="source"         type="hidden" value="">
-        <input id="utm_medium"    name="utm_medium"     type="hidden" value="">
-        <input type="hidden"      name="orderid"        value="731">
-        <input type="hidden"      name="sitename"       value="My School RideJune2023">
-        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-        <button id="btnSubmit" type="submit" class="btn btn_submit w-100 mt-0">Book a Demo</button>
-      </div>
-    </div>
-
-  </div>
-</form>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</section>
-
-
-
-<!-- Hero section end (Slider) --> 
-
-<section class="position-relative text-center my-4">
-<div class="container">
-<div class="widget-title"> 
-<span class="text-darkk d-block wow fadeInUp fsize20 mb-2" data-wow-delay="300ms">About My School Ride</span>
-<h3 class="font-weight-400 wow fadeInUp" data-wow-delay="600ms">My School Ride Allows School Bus Managers To<br/>Remotely Track Their Buses, Drivers, And Students.</h3>
-</div>
-</div>
-</section>
-
-<section class="position-relative bg-orange py-4 elite__section">
-<div class="container-fluid">
-<div class="widget-title text-center mb-4"> 
-<h3 class="font-weight-400 wow fadeInUp white-col text-uppercase" data-wow-delay="0ms">What makes us elite</h3>
-</div>
-
-<div class="elite__block">
-  <div class="owl-carousel owl-theme" id="elite-slider">
-      <div class="elite__item wow fadeInUp" data-wow-delay="300ms">
-      <div class="lite_icon">
-      <img class="img-fluid" src="images/stress.png" alt="school bus tracking"/>
-      </div>
-      <div class="elite__content">
-      <h4 class="text-white">Say Goodbye To<br/> Stressful Days</h4>
-      <p class="text-white">No more missed stops or lost buses. With live map tracking and the routing history, My School Ride helps school bus managers reduce stress and manage fleet efficiently.</p>
-      </div>
-      </div>
-
-
-      <div class="elite__item wow fadeInUp" data-wow-delay="600ms">
-      <div class="lite_icon">
-      <img class="img-fluid" src="images/student.png" alt="bus gps tracking"/>
-      </div>
-      <div class="elite__content">
-      <h4 class="text-white">Students Always Get<br/> To School On Time</h4>
-      <p class="text-white">My School Ride’s live tracking & routing history helps school bus managers find any missed stops or lost buses. It also helps them optimise routes every day to make sure kids always get to school on time.</p>
-      </div>
-      </div>
-
-
-      <div class="elite__item wow fadeInUp" data-wow-delay="900ms">
-      <div class="lite_icon">
-      <img class="img-fluid" src="images/company.png" alt="RFID attendance system"/>
-      </div>
-      <div class="elite__content">
-      <h4 class="text-white">About Us</h4>
-      <p class="text-white">With My School Ride you can be assured of real-time visibility of your students during transit. The advanced platform is designed to make your job easier with features such as generating trips, viewing how long the bus spends at each stop, notifying delays, and recording attendance. You can now sit back and relax, trusting that the real-time tracking platform will do the work for you without any worries!</p>
-      </div>
-      </div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="position-relative text-center py-4">
-<div class="container-fluid">
-<div class="widget-title"> 
-<h2 class="font-weight-600 wow fadeInUp text-uppercase" data-wow-delay="0ms"><br>How does Our Solution work?</h2>
-</div>
-
-<section style="width: 100%; margin: 0; padding: 0;">
-    <img src="images/School-transportation-for-everyone2.png" alt="My School Ride Banner" style="width: 100%; height: auto;">
-</section>
-<br>
-
-<section class="position-relative bg-orange py-4 elite__section">
-<div class="container">
-<div class="widget-title text-center mb-5"> 
-<h3 class="font-weight-400 wow fadeInUp white-col text-uppercase" data-wow-delay="0ms"><br>What Do You Get?</h3>
-<span class="text-white d-block wow fadeInUp fsize20 mt-2" data-wow-delay="300ms">Guaranteed PEACE of MIND for all the stakeholders involved.</span>
-</div>
-
-<div class="row">
-<div class="col-lg-4 col-md-12 text-center dv_middle order-md-2 wow fadeInUp">
-<div class="track-gprs jumping_ani">
-<img class="img-fluid" src="images/track-gprs.png" alt=""/>
-</div>
-</div>
-
-  <div class="col-lg-4 col-md-12 dv_left text-end order-md-1">
-    <div class="mb-4 wow fadeInLeft" data-wow-delay="300ms">
-      <h5 class="text-white mb-2 fsize24">New-Age Tracking</h5>
-      <p class="text-white">Real-time bus tracking is becoming increasingly popular in the new-age, thanks to its convenience and efficiency. real-time bus tracking also helps operators ensure that they are running their routes efficiently and on-schedule, making it a win-win situation for both Parents and School.</p>
-    </div>
-    <div class="mb-4 wow fadeInLeft" data-wow-delay="600ms">
-      <h5 class="text-white mb-2 fsize24">SMS/App Notifications</h5>
-      <p class="text-white">SMS/App Notifications are an important tool to keep Parents updated on their Children and other relevant information. We take this responsibility very seriously, and have dedicated resources to ensure that our SMS/App Notifications are always sent on time. Timely SMS/App Notifications are a key part of our commitment.</p>
-    </div>
-  </div>
-
-
-
-  <div class="col-lg-4 col-md-12 dv_right text-start order-md-3">
-    <div class="mb-4 wow fadeInRight" data-wow-delay="300ms">
-      <h5 class="text-white mb-2 fsize24">RFID based attendance</h5>
-      <p class="text-white">RFID based Tracking is an effective solution for schools/oraganizations to monitor attendance of their children efficiently.The accuracy and reliability of RFID based attendance makes it a preferred choice for schools/organizations that need to manage large amounts of data.</p>
-    </div>
-    <div class="mb-4 wow fadeInRight" data-wow-delay="600ms">
-      <h5 class="text-white mb-2 fsize24">Sit Back, Relax!</h5>
-      <p class="text-white">With the advanced school bus tracking platform, all you have to do is sit back, relax and let it do the work for you! It also notifies you when the bus reaches its designated stops. This cutting-edge technology will help ensure that your children are always safe and in good hands.</p>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-
-
-<section class="bringing-section py-5 position-relative">
-<div class="container">
-<div class="widget-title text-center mb-4"> 
-<h3 class="font-weight-400 wow fadeInUp text-blue text-uppercase" data-wow-delay="0ms">BRINGING YOUR IDEAS TO LIFE, ALL IN ONE SPOT</h3>
-<p class="d-block wow fadeInUp  mt-2" data-wow-delay="300ms">We Automate your school with Smart Bus, Smart Attendance, Smart Surveillance and Smart Routes.</p>
-</div>
-
-<div class="owl-carousel owl-theme text-center wow fadeInUp" id="counter-slider">
-    <div class="counter__item shadow" data-tilt>
-    <div class="icon_job">
-    <img width="52" height="54" src="images/Group-1.svg" alt=""/>
-    </div>
-    <div class="content_job">
-    <div class="mt-4 mb-1">
-    <strong class="font-weight-400 counter">1000</strong>
-    <strong class="font-weight-400">+</strong>
-  </div>
-    <p>Happy Customers</p>
-    </div>
-    </div>
-
-
-    <div class="counter__item shadow" data-tilt>
-    <div class="icon_job">
-    <img width="52" height="54" src="images/PartnersIcon-1.svg" alt=""/>
-    </div>
-    <div class="content_job">
-          <div class="mt-4 mb-1">
-    <strong class="font-weight-400 counter">95000</strong>
-    <strong class="font-weight-400">+</strong>
-  </div>
-    <p>Users</p>
-    </div>
-    </div>
-
-
-    <div class="counter__item shadow" data-tilt>
-    <div class="icon_job">
-    <img width="52" height="54" src="images/vehicles.svg" alt=""/>
-    </div>
-    <div class="content_job">
-          <div class="mt-4 mb-1">
-    <strong class="font-weight-400 counter">3500</strong>
-    <strong class="font-weight-400">+</strong>
-  </div>
-    <p>Buses</p>
-    </div>
-    </div>
-
-
-    <div class="counter__item shadow" data-tilt>
-    <div class="icon_job">
-    <img width="52" height="54" src="images/material.svg" alt=""/>
-    </div>
-    <div class="content_job">
-          <div class="mt-4 mb-1">
-    <strong class="font-weight-400 counter">4.6</strong>
-    <strong class="font-weight-400">+</strong>
-  </div>
-    <p>App Rating</p>
-    </div>
-    </div>
-</div>
-</div>
-</section>
-
-
-<section class="features-section py-5 position-relative">
-<div class="container">
-<div class="widget-title text-center mb-4"> 
-<h3 class="font-weight-400 wow fadeInUp text-blue text-uppercase" data-wow-delay="0ms">Features That Make Us Distinct From Others</h3>
-</div>
-<div class="features-Block">
-    <ul class="nav nav-tabs" id="myTab">
-        <li class="nav-item">
-            <a href="#fparents" class="nav-link active" data-bs-toggle="tab">Features for Parents</a>
-        </li>
-        <li class="nav-item">
-            <a href="#fschools" class="nav-link" data-bs-toggle="tab">Features for Schools</a>
-        </li>
-        
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="fparents">
-            <div class="vartical_tab_dv">
-            <div class="row">
-            <div class="col-md-6">
-            <ul class="nav nav-pills vartical-tabs-blk flex-column" id="myTab">
-            <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#real">
-            <img src="images/real-time.png" alt=""/>
-            <span class="d-block mt-3">Real Time Information</span>
-            </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#proximity">
-            <img src="images/Proximity.png" alt=""/>
-            <span class="d-block mt-3">Proximity Alerts to Parents</span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#notifications">
-            <img src="images/Notifications.png" alt=""/>
-            <span class="d-block mt-3">Notifications to Parents</span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#alerts">
-            <img src="images/Safety.png" alt=""/>
-            <span class="d-block mt-3">Safety Alerts</span></a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#accuracy">
-            <img src="images/Accuracy.png" alt=""/>
-            <span class="d-block mt-3">Accuracy</span></a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#audio">
-            <img src="images/Audio.png" alt=""/>
-            <span class="d-block mt-3">Video Surveillance</span></a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#ease">
-            <img src="images/Ease.png" alt=""/>
-            <span class="d-block mt-3">Ease of Use</span></a>
-            </li>
-
-             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#emergencyn">
-            <img src="images/Emergency.png" alt=""/>
-            <span class="d-block mt-3">Emergency Notifications</span></a>
-            </li>
-
-             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#time">
-            <img src="images/Time.png" alt=""/>
-            <span class="d-block mt-3">Time Saved</span></a>
-            </li>
-            </ul>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-6">
-            <div class="tab-content">
-            <div class="tab-pane fade show active" id="real">
-            <div class="fea_img"><img src="images/real-time.png" alt=""/></div>
-            <h2>Real Time<br/> Information</h2>
-            <p>We give live mobile access with our app. Parents can see live location of the bus. Estimated time of arrival. Can call Driver from app directly. They also get instant multiple notifications.</p>
-            </div>
-
-            <div class="tab-pane fade" id="proximity">
-            <div class="fea_img"><img src="images/Proximity.png" alt=""/></div>
-            <h2>Proximity Alerts<br/> to Parents</h2>
-            <p>Alerts are sent to parents 2km before the school bus reaches the pick-up or drop point. They also get notifications when bus leaves the school and when bus reach the school</p>
-            </div>
-
-            <div class="tab-pane fade" id="notifications">
-            <div class="fea_img"><img src="images/Notifications.png" alt=""/></div>
-            <h2>Notifications to <br/>Parents</h2>
-            <p>Real-time app notifications when a kid is picked up or dropped in school.</p>
-            </div>
-
-            <div class="tab-pane fade" id="alerts">
-            <div class="fea_img"><img src="images/Safety.png" alt=""/></div>
-            <h2>Safety Alerts</h2>
-            <p>Notifications are also sent when a kid starts from or reaches school.</p>
-            </div>
-
-            <div class="tab-pane fade" id="accuracy">
-            <div class="fea_img"><img src="images/Accuracy.png" alt=""/></div>
-            <h2>Accuracy</h2>
-            <p>Precise tracking of the school bus enables parents to plan their time efficiently.</p>
-            </div>
-
-            <div class="tab-pane fade" id="audio">
-            <div class="fea_img"><img src="images/Audio.png" alt=""/></div>
-            <h2>Audio & Video<br/> Surveillance</h2>
-            <p>My School Ride offers extended safety features with surveillance through camera, audio mic and SOS.</p>
-            </div>
-
-            <div class="tab-pane fade" id="ease">
-            <div class="fea_img"><img src="images/Ease.png" alt=""/></div>
-            <h2>Ease of Use</h2>
-            <p>My School Ride easy user interface offers multiple language support and adaptability across different OS platforms.</p>
-            </div>
-
-            <div class="tab-pane fade" id="emergencyn">
-            <div class="fea_img"><img src="images/Emergency.png" alt=""/></div>
-            <h2>Emergency<br/> Notifications</h2>
-            <p>Parents are alerted when the school bus is delayed or any unplanned incidents.</p>
-            </div>
-
-            <div class="tab-pane fade" id="time">
-            <div class="fea_img"><img src="images/Time.png" alt=""/></div>
-            <h2>Time Saved</h2>
-            <p>Parents need not waste their time waiting for school bus and kids spend the least time on the bus.</p>
-            </div>
-            </div>
-            </div>
-            <!-- /.col-md-8 -->
-            </div>
-            </div>
+import { useState, useEffect, useRef } from "react";
+
+// ── Color tokens ──────────────────────────────────────────────────────────────
+const C = {
+  bg: "#f0f4f8",
+  surface: "#ffffff",
+  surfaceAlt: "#f7f9fc",
+  border: "#e2e8f0",
+  borderBright: "#cbd5e1",
+  accent: "#2563eb",
+  accentGlow: "#2563eb15",
+  green: "#16a34a",
+  greenGlow: "#16a34a12",
+  amber: "#d97706",
+  red: "#dc2626",
+  text: "#0f172a",
+  textMid: "#475569",
+  textDim: "#94a3b8",
+  yellow: "#ca8a04",
+};
+
+// ── Mock Data ─────────────────────────────────────────────────────────────────
+const INVENTORY = [
+  { id: "INV-001", sku: "GPS-VT-001", name: "GPS Tracker GT06N", category: "GPS Device", brand: "Concox", model: "GT06N", stock: 42, reserved: 8, min: 10, location: "WH-A", rack: "R01", price: 1850, status: "active", warranty: "2026-03-15", serial: "SN2024001" },
+  { id: "INV-002", sku: "RFID-RDR-002", name: "RFID Reader 125kHz", category: "RFID", brand: "HID", model: "RDR-60", stock: 7, reserved: 2, min: 10, location: "WH-A", rack: "R02", price: 4200, status: "low_stock", warranty: "2025-12-01", serial: "SN2024002" },
+  { id: "INV-003", sku: "CAM-IP-003", name: "IP Camera 4MP", category: "Surveillance", brand: "Hikvision", model: "DS-2CD2143G2", stock: 28, reserved: 5, min: 8, location: "WH-B", rack: "R05", price: 6500, status: "active", warranty: "2027-01-20", serial: "SN2024003" },
+  { id: "INV-004", sku: "CBL-POE-004", name: "POE Cable Cat6 (30m)", category: "Cable", brand: "D-Link", model: "NCB-C6UGRYR1-1", stock: 3, reserved: 1, min: 15, location: "WH-A", rack: "R08", price: 380, status: "critical", warranty: "-", serial: "-" },
+  { id: "INV-005", sku: "SWT-POE-005", name: "POE Switch 8-Port", category: "Networking", brand: "TP-Link", model: "TL-SF1009P", stock: 14, reserved: 0, min: 5, location: "WH-B", rack: "R03", price: 3200, status: "active", warranty: "2026-09-10", serial: "SN2024005" },
+  { id: "INV-006", sku: "SIM-4G-006", name: "4G SIM Card (Jio)", category: "Connectivity", brand: "Jio", model: "IoT SIM", stock: 89, reserved: 12, min: 20, location: "WH-A", rack: "R10", price: 299, status: "active", warranty: "-", serial: "-" },
+  { id: "INV-007", sku: "ANT-GPS-007", name: "GPS Antenna External", category: "Accessory", brand: "Generic", model: "SMA-GPS", stock: 0, reserved: 0, min: 10, location: "WH-B", rack: "R07", price: 150, status: "out_of_stock", warranty: "-", serial: "-" },
+  { id: "INV-008", sku: "NVR-16-008", name: "NVR 16 Channel", category: "Surveillance", brand: "Dahua", model: "DHI-NVR4416", stock: 6, reserved: 2, min: 3, location: "WH-B", rack: "R04", price: 22500, status: "active", warranty: "2027-06-01", serial: "SN2024008" },
+];
+
+const TRANSACTIONS = [
+  { id: "TXN-001", type: "stock_out", item: "GPS Tracker GT06N", qty: 5, by: "Rahul Kumar", date: "2025-05-18", status: "approved", customer: "Maharashtra MSRTC" },
+  { id: "TXN-002", type: "stock_in", item: "IP Camera 4MP", qty: 20, by: "Priya Store Mgr", date: "2025-05-18", status: "completed", customer: "-" },
+  { id: "TXN-003", type: "return", item: "GPS Tracker GT06N", qty: 2, by: "Arun Tech", date: "2025-05-17", status: "pending", customer: "Pune PMPML" },
+  { id: "TXN-004", type: "stock_out", item: "POE Cable Cat6", qty: 8, by: "Vijay Sales", date: "2025-05-17", status: "pending_approval", customer: "Delhi Metro" },
+  { id: "TXN-005", type: "replacement", item: "RFID Reader 125kHz", qty: 1, by: "Suresh Tech", date: "2025-05-16", status: "approved", customer: "Infosys Pune" },
+  { id: "TXN-006", type: "purchase", item: "POE Cable Cat6 (30m)", qty: 50, by: "Priya Store Mgr", date: "2025-05-15", status: "director_approval", customer: "-" },
+];
+
+const APPROVALS = [
+  { id: "APR-001", type: "Stock Out", item: "POE Cable Cat6 (30m)", qty: 8, requestedBy: "Vijay Sales", date: "2025-05-17", priority: "high", stage: "Accountant Review" },
+  { id: "APR-002", type: "Purchase Request", item: "POE Cable Cat6 (30m)", qty: 50, requestedBy: "Priya Store Mgr", date: "2025-05-15", priority: "critical", stage: "Director Approval" },
+  { id: "APR-003", type: "Inventory Add", item: "Smart Bus Validator", qty: 25, requestedBy: "Admin", date: "2025-05-14", priority: "medium", stage: "Director Approval" },
+  { id: "APR-004", type: "Return", item: "GPS Tracker GT06N", qty: 2, requestedBy: "Arun Tech", date: "2025-05-17", priority: "low", stage: "Store Manager Review" },
+];
+
+const VENDORS = [
+  { id: "V-001", name: "Concox Technologies", contact: "Ramesh@concox.in", items: 12, status: "active" },
+  { id: "V-002", name: "HID Global India", contact: "sales@hidglobal.in", items: 8, status: "active" },
+  { id: "V-003", name: "Hikvision India", contact: "info@hikvision.in", items: 24, status: "active" },
+];
+
+const NAV_ITEMS = [
+  { id: "dashboard", label: "Dashboard", icon: "◈" },
+  { id: "inventory", label: "Inventory", icon: "⊞" },
+  { id: "transactions", label: "Transactions", icon: "⇌" },
+  { id: "approvals", label: "Approvals", icon: "◎", badge: 4 },
+  { id: "purchase", label: "Purchase", icon: "⊕" },
+  { id: "reports", label: "Reports", icon: "▤" },
+  { id: "vendors", label: "Vendors", icon: "◇" },
+  { id: "users", label: "Users", icon: "○" },
+  { id: "settings", label: "Settings", icon: "⊙" },
+];
+
+const STAT_CARDS = [
+  { label: "Total Items", value: "248", sub: "+12 this month", color: C.accent, icon: "⊞" },
+  { label: "Inventory Value", value: "₹18.4L", sub: "across all warehouses", color: C.green, icon: "◈" },
+  { label: "Low Stock Alerts", value: "7", sub: "requires attention", color: C.amber, icon: "⚠" },
+  { label: "Pending Approvals", value: "4", sub: "awaiting action", color: C.red, icon: "◎" },
+];
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+const statusBadge = (s) => {
+  const map = {
+    active: { label: "Active", bg: "#dcfce7", color: "#15803d" },
+    low_stock: { label: "Low Stock", bg: "#fef3c7", color: "#b45309" },
+    critical: { label: "Critical", bg: "#fee2e2", color: "#b91c1c" },
+    out_of_stock: { label: "Out of Stock", bg: "#fee2e2", color: "#b91c1c" },
+    approved: { label: "Approved", bg: "#dcfce7", color: "#15803d" },
+    completed: { label: "Completed", bg: "#dbeafe", color: "#1d4ed8" },
+    pending: { label: "Pending", bg: "#fef3c7", color: "#b45309" },
+    pending_approval: { label: "Pending Approval", bg: "#fee2e2", color: "#b91c1c" },
+    director_approval: { label: "Director Approval", bg: "#ede9fe", color: "#6d28d9" },
+  };
+  const cfg = map[s] || { label: s, bg: "#1d2130", color: "#8892a4" };
+  return (
+    <span style={{ background: cfg.bg, color: cfg.color, padding: "2px 8px", borderRadius: 4, fontSize: 10, fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", fontFamily: "monospace" }}>
+      {cfg.label}
+    </span>
+  );
+};
+
+const txnType = (t) => {
+  const map = { stock_out: ["↑ Out", "#ef4444"], stock_in: ["↓ In", "#22c97a"], return: ["↩ Return", "#f59e0b"], replacement: ["⇄ Replace", "#a78bfa"], purchase: ["⊕ Purchase", "#4f8ef7"] };
+  const [label, color] = map[t] || [t, "#8892a4"];
+  return <span style={{ color, fontFamily: "monospace", fontSize: 11, fontWeight: 700 }}>{label}</span>;
+};
+
+// ── Components ────────────────────────────────────────────────────────────────
+function Sidebar({ active, setActive, role }) {
+  return (
+    <aside style={{ width: 220, minHeight: "100vh", background: C.surface, borderRight: `1px solid ${C.border}`, display: "flex", flexDirection: "column", flexShrink: 0 }}>
+      {/* Logo */}
+      <div style={{ padding: "24px 20px 20px", borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div style={{ width: 32, height: 32, background: "linear-gradient(135deg, #2563eb, #4f46e5)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, color: "#fff" }}>◈</div>
+          <div>
+            <div style={{ fontSize: 13, fontWeight: 800, color: C.text, letterSpacing: "-0.02em" }}>SATCOP</div>
+            <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace", letterSpacing: "0.12em" }}>INDIA · IMS</div>
+          </div>
         </div>
-        <div class="tab-pane fade" id="fschools">
-            <div class="vartical_tab_dv">
-            <div class="row">
-            <div class="col-md-6 col-sm-12">
-            <ul class="nav nav-pills vartical-tabs-blk flex-column" id="myTab">
-            <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#route">
-            <img src="images/Route.png" alt=""/>
-            <span class="d-block mt-3">Route Optimization</span>
-            </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#complete">
-            <img src="images/Complete.png" alt=""/>
-            <span class="d-block mt-3">Complete Playback</span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#consolidated">
-            <img src="images/Consolidated.png" alt=""/>
-            <span class="d-block mt-3">Consolidated Reports</span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#profit">
-            <img src="images/Profit.png" alt=""/>
-            <span class="d-block mt-3">Profit Maximization</span></a>
-            </li>
+      </div>
 
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#instant">
-            <img src="images/Emergency-1.png" alt=""/>
-            <span class="d-block mt-3">Instant Breach Alerts</span></a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#safety">
-            <img src="images/Safety-1.png" alt=""/>
-            <span class="d-block mt-3">Safety and Security</span></a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#manpower">
-            <img src="images/tab_6.png" alt=""/>
-            <span class="d-block mt-3">Man power saving</span></a>
-            </li>
-            </ul>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-6">
-            <div class="tab-content">
-            <div class="tab-pane fade show active" id="route">
-            <div class="fea_img"><img src="images/Route.png" alt=""/></div>
-            <h2>Route <br/>Optimization</h2>
-            <p>With the help of historic data, My School Ride finds out the most optimized route for the entire fleet. This smart route plan helps the school management to be fuel & time efficient.</p>
-            </div>
-
-            <div class="tab-pane fade" id="complete">
-            <div class="fea_img"><img src="images/Complete.png" alt=""/></div>
-            <h2>Complete<br/> Playback</h2>
-            <p>The entire fleet's 180 Days (24*7) is saved and the school management can analyse the fleet movement at any point.</p>
-            </div>
-
-            <div class="tab-pane fade" id="consolidated">
-            <div class="fea_img"><img src="images/Consolidated.png" alt=""/></div>
-            <h2>Consolidated<br/> Reports</h2>
-            <p>By saving route information for one year, My School Ride generates reports & charts that give key insights into fuel management, time efficiency, and route efficiency. We have more then 10 different reports.</p>
-            </div>
-
-            <div class="tab-pane fade" id="profit">
-            <div class="fea_img"><img src="images/Profit.png" alt=""/></div>
-            <h2>Profit<br/> Maximization</h2>
-            <p>With zero hardware investments and less human efforts, My School Ride is the most suitable solution for school transportation.</p>
-            </div>
-
-            <div class="tab-pane fade" id="instant">
-            <div class="fea_img"><img src="images/Emergency-1.png" alt=""/></div>
-            <h2>Instant Breach<br/> Alerts</h2>
-            <p>Immediate alerts are sent to the school management when there is any deviation from the expected behaviours. Speed limit breach, distance limit breach, unauthorized vehicle movement, route changes or delays.</p>
-            </div>
-
-            <div class="tab-pane fade" id="safety">
-            <div class="fea_img"><img src="images/Safety-1.png" alt=""/></div>
-            <h2>Safety and<br/> Security</h2>
-            <p>Kids are secure from any threats and misdoings as the school bus is guarded with an intelligent My School Ride system by instantly notifying kid's status & breach alerts to respective stake holders.</p>
-            </div>
-
-            <div class="tab-pane fade" id="manpower">
-            <div class="fea_img"><img src="images/tab_6.png" alt=""/></div>
-            <h2>Man power<br/> saving</h2>
-            <p>With so much of report and self-analysis by the software you just need minimum transport team to manage the fleet</p>
-            </div>
-            </div>
-            </div>
-            <!-- /.col-md-8 -->
-            </div>
-            </div>
+      {/* Role Badge */}
+      <div style={{ padding: "12px 20px", borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ background: `${C.accent}15`, border: `1px solid ${C.accent}30`, borderRadius: 6, padding: "6px 10px", display: "flex", alignItems: "center", gap: 8 }}>
+          <div style={{ width: 6, height: 6, borderRadius: "50%", background: C.green }} />
+          <span style={{ fontSize: 10, color: C.accent, fontFamily: "monospace", fontWeight: 700 }}>{role}</span>
         </div>
-        
+      </div>
+
+      {/* Nav */}
+      <nav style={{ flex: 1, padding: "12px 12px" }}>
+        {NAV_ITEMS.map(item => (
+          <button
+            key={item.id}
+            onClick={() => setActive(item.id)}
+            style={{
+              width: "100%", display: "flex", alignItems: "center", gap: 10, padding: "9px 10px", borderRadius: 7, border: "none", cursor: "pointer", marginBottom: 2,
+              background: active === item.id ? `${C.accent}15` : "transparent",
+              color: active === item.id ? C.accent : C.textMid,
+              transition: "all 0.15s",
+              position: "relative",
+            }}
+          >
+            <span style={{ fontSize: 14, width: 18, textAlign: "center", opacity: active === item.id ? 1 : 0.6 }}>{item.icon}</span>
+            <span style={{ fontSize: 12, fontWeight: active === item.id ? 700 : 500, letterSpacing: "0.01em" }}>{item.label}</span>
+            {item.badge && (
+              <span style={{ marginLeft: "auto", background: C.red, color: "#fff", fontSize: 9, fontWeight: 800, borderRadius: 10, padding: "1px 5px", fontFamily: "monospace" }}>
+                {item.badge}
+              </span>
+            )}
+            {active === item.id && (
+              <div style={{ position: "absolute", left: 0, top: "50%", transform: "translateY(-50%)", width: 3, height: 20, background: C.accent, borderRadius: "0 3px 3px 0" }} />
+            )}
+          </button>
+        ))}
+      </nav>
+
+      {/* User */}
+      <div style={{ padding: "16px 16px", borderTop: `1px solid ${C.border}` }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div style={{ width: 32, height: 32, borderRadius: "50%", background: "linear-gradient(135deg, #2563eb, #4f46e5)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, color: "#fff", fontWeight: 800 }}>
+            D
+          </div>
+          <div>
+            <div style={{ fontSize: 11, fontWeight: 700, color: C.text }}>Director</div>
+            <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace" }}>satcop.india</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  );
+}
+
+function TopBar({ title, sub }) {
+  const [search, setSearch] = useState("");
+  return (
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 28px", borderBottom: `1px solid ${C.border}`, background: C.surface, flexShrink: 0 }}>
+      <div>
+        <h1 style={{ fontSize: 16, fontWeight: 800, color: C.text, margin: 0, letterSpacing: "-0.02em" }}>{title}</h1>
+        <p style={{ fontSize: 11, color: C.textDim, margin: 0, fontFamily: "monospace", marginTop: 2 }}>{sub}</p>
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div style={{ position: "relative" }}>
+          <input
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder="Search inventory, SKU, serial..."
+            style={{ width: 260, background: C.surfaceAlt, border: `1px solid ${C.border}`, borderRadius: 8, padding: "8px 12px 8px 32px", color: C.text, fontSize: 11, fontFamily: "monospace", outline: "none" }}
+          />
+          <span style={{ position: "absolute", left: 10, top: "50%", transform: "translateY(-50%)", color: C.textDim, fontSize: 12 }}>⌕</span>
+        </div>
+        <button style={{ background: C.accentGlow, border: `1px solid ${C.accent}40`, color: C.accent, borderRadius: 8, padding: "8px 14px", fontSize: 11, fontWeight: 700, cursor: "pointer", fontFamily: "monospace" }}>
+          + New Entry
+        </button>
+      </div>
     </div>
-</div>
-</div>
-</section>
+  );
+}
 
-<section class="parent-section py-5 position-relative">
-<div class="container">
-<div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-12">
-<div class="widget-title"> 
-<h3 class="font-weight-400 wow fadeInUp text-blue" data-wow-delay="300ms">1. Parent App</h3>
-<p class="text-darkk d-block wow fadeInUp my-4" data-wow-delay="600ms">Bus tracking parent app helps you to pick your children from their respective bus stops at the right time.</p>
-</div>
+// ── Dashboard View ────────────────────────────────────────────────────────────
+function Dashboard() {
+  const bar = (pct, color) => (
+    <div style={{ height: 4, background: C.border, borderRadius: 4, overflow: "hidden" }}>
+      <div style={{ width: `${pct}%`, height: "100%", background: color, borderRadius: 4 }} />
+    </div>
+  );
 
-<div class="sliderBtn" id="parentApp">
-<ul>
-<li class="active">
-<a href="#parentApp_1">Children list</a>
-</li>
-<li>
-<a href="#parentApp_2">Live Status</a>
-</li>
-<li>
-<a href="#parentApp_3">Map view</a>
-</li>
-<li>
-<a href="#parentApp_4">Bus History</a>
-</li>
-<li>
-<a href="#parentApp_5">Bus info</a>
-</li>
-<li>
-<a href="#parentApp_6">Add/Edit pickup &amp; drop location</a>
-</li>
-<li>
-<a href="#parentApp_7">Set reminders</a>
-</li>
-<li>
-<a href="#parentApp_8">Setting</a>
-</li>
-</ul>
-</div>
-  </div>
+  return (
+    <div style={{ padding: 28, overflowY: "auto", flex: 1 }}>
+      {/* Stat Cards */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16, marginBottom: 28 }}>
+        {STAT_CARDS.map((card, i) => (
+          <div key={i} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20, position: "relative", overflow: "hidden" }}>
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: card.color }} />
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
+              <span style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>{card.label}</span>
+              <span style={{ fontSize: 18, opacity: 0.4, color: card.color }}>{card.icon}</span>
+            </div>
+            <div style={{ fontSize: 28, fontWeight: 900, color: C.text, letterSpacing: "-0.04em", marginBottom: 4 }}>{card.value}</div>
+            <div style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>{card.sub}</div>
+          </div>
+        ))}
+      </div>
 
-<div class="col-lg-8 col-md-8 col-sm-12 position-relative">
-<div class="mobileFrame"><img src="images/MobileFrame.png" class="img-fluid" alt="" title="MobileFrame"></div>
-
-<div class="images_slider_navibar owl-carousel  owl-theme" id="parent-slider">
-<div class="item" data-hash="parentApp_1">
-<img class="img-fluid" src="images/Children-List.webp" alt="" />
-</div>
-<div class="item" data-hash="parentApp_2">
-<img class="img-fluid" src="images/Live-status.png" alt="" />
-</div>
-<div class="item" data-hash="parentApp_3">
-<img class="img-fluid" src="images/Map-View.png" alt="" />
-</div>
-<div class="item" data-hash="parentApp_4">
-<img  class="img-fluid" src="images/Bus-History-1.png" alt="" />
-</div>
-<div class="item" data-hash="parentApp_5">
-<img  class="img-fluid" src="images/Bus-info.png" alt="" />
-</div>
-<div class="item" data-hash="parentApp_6">
-<img  class="img-fluid" src="images/Pickup_Drop-Alerts.png" alt="" />
-</div>
-<div class="item" data-hash="parentApp_7">
-<img  class="img-fluid" src="images/Set-Reminder.png" alt="" />
-</div>
-<div class="item" data-hash="parentApp_8">
-<img  class="img-fluid" src="images/Settings.png" alt="" />
-</div>
-</div>
-  </div>
-</div>
-</div>
-</section>
-
-<section class="parent-section bg-white py-5 driver_sec position-relative">
-<div class="container">
-<div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-12">
-<div class="widget-title"> 
-<h3 class="font-weight-400 wow fadeInUp text-blue" data-wow-delay="300ms">2. Driver App</h3>
-<p class="text-darkk d-block wow fadeInUp my-4" data-wow-delay="600ms">Driver app helps drivers to check the direction to their upcoming pickup and drop point that includes important children details.</p>
-</div>
-
-<div class="sliderBtn" id="driveApp">
-<ul>
-<li class="active">
-<a href="#driverApp_1">List of children</a>
-</li>
-<li>
-<a href="#driverApp_2">Picked/Absent children view</a>
-</li>
-<li>
-<a href="#driverApp_3">Update status of pick/drop</a>
-</li>
-<li>
-<a href="#driverApp_4">Change language including RTL</a>
-</li>
-</ul>
-</div>
-  </div>
-
-<div class="col-lg-8 col-md-8 col-sm-12 position-relative">
-<div class="mobileFrame"><img src="images/MobileFrame.png" class="img-fluid" alt="" title="MobileFrame"></div>
-
-<div class="images_slider_navibar owl-carousel  owl-theme" id="driver-slider">
-<div class="item" data-hash="driverApp_1">
-<img class="img-fluid" src="images/admin04.png" alt="" />
-</div>
-<div class="item" data-hash="driverApp_2">
-<img class="img-fluid" src="images/admin03.png" alt="" />
-</div>
-<div class="item" data-hash="driverApp_3">
-<img class="img-fluid" src="images/admin02.png" alt="" />
-</div>
-<div class="item" data-hash="driverApp_4">
-<img class="img-fluid" src="images/admin01.png" alt="" />
-</div>
-</div>
-  </div>
-</div>
-</div>
-</section>
-
-<section class="parent-section py-5 position-relative">
-<div class="container">
-<div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-12">
-<div class="widget-title"> 
-<h3 class="font-weight-400 wow fadeInUp text-blue" data-wow-delay="300ms">3. Admin Panel</h3>
-<p class="text-darkk d-block wow fadeInUp my-4" data-wow-delay="600ms">Advanced web admin panel with well-structured code that controls every aspect of users. A dashboard that helps to analyze overall growth.</p>
-</div>
-
-<div class="sliderBtn" id="adminApp">
-<ul>
-<li class="active">
-<a href="#adminpanel_1">Live Tracking</a>
-</li>
-<li>
-<a href="#adminpanel_2">Trip Live</a>
-</li>
-<li>
-<a href="#adminpanel_3">Control Panel</a>
-</li>
-<li>
-<a href="#adminpanel_4">Student Trip Allocation</a>
-</li>
-</ul>
-</div>
-  </div>
-
-<div class="col-lg-8 col-md-8 col-sm-12 position-relative">
-<div class="webFrame"><img src="images/web_frame.png" class="img-fluid" alt="" title="web_frame"></div>
-
-<div class="images_slider_navibar owl-carousel  owl-theme" id="admin-slider">
-<div class="item" data-hash="adminpanel_1">
-<img class="img-fluid" src="images/Vehicle.png" alt="" />
-</div>
-<div class="item" data-hash="adminpanel_2">
-<img class="img-fluid" src="images/Live Trip.png" alt="" />
-</div>
-<div class="item" data-hash="adminpanel_3">
-<img class="img-fluid" src="images/Dashboard.png" alt="" />
-</div>
-<div class="item" data-hash="adminpanel_4">
-<img class="img-fluid" src="images/Trip allocation.png" alt="" />
-</div>
-</div>
-  </div>
-</div>
-</div>
-</section>
-
-
-<section class="deliverables-section bg-orange py-5 position-relative">
-<div class="container">
-<div class="widget-title text-center mb-4"> 
-<h3 class="font-weight-400 text-white wow fadeInUp" data-wow-delay="0ms">3 Deliverables</h3>
-<p class="text-white d-block wow fadeInUp mt-2" data-wow-delay="300ms">We provide 3 mobile Applications</p>
-</div>
-
-<div class="deliverables_blk w-75 mx-auto text-center">
-  <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mt-4" data-wow-delay="300ms">
-      <div class="app__blk-item">
-        <div class="appIcon"><img class="img-fluid" src="images/Parent-App-1.png" alt=""/></div>
-        <h5 class="text-white text-center my-3 fsize24">Parent App</h5>
-        <div class="downLoadBtn" id="parent">
-          <a class="app" data-fancybox data-touch="false" href="#parentpop">iOS App</a>
-          <a class="iso" data-fancybox data-touch="false" href="#parentpop" target="_blank">Android App</a>
-
-<div id="parentpop">
-<h5 class="fsize22 font-weight-600 text-red mb-4">Parent App</h5>
-<form id="formID2" name="career-form" method="post"  action="Contact-myschoolride.php">
-<div class="formCareerfid">
-<div class="form-group">
-<input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*" data-errormessage-value-missing="*Name is required!" type="text" >
-</div>
-
-<div class="form-group">
-<input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30" data-errormessage-value-missing="* Email is required!" type="text" >
-</div>
-<div class="form-group">
-<input name="phone" id="phonee" maxlength="10" placeholder="Mobile*" class="form-control validate[required, custom[phone]]" data-errormessage-value-missing="* Mobile is required!" type="tel" />
-</div>
-
-<div class="form-group">
-<input name="city" class="form-control validate[required, custom[name]]" placeholder="Your City*" data-errormessage-value-missing="*city is required!" type="text" >
-</div>
-
-<div class="contact-fild-box text-center mt-4">
-<div class="form-group">
-<input id="referrerid1" name="referrer_name" type="hidden" value="">
-                          <input id="keyword1" name="keyword" type="hidden" value="">
-                          <input id="network1" name="network" type="hidden" value="">
-                          <input id="campaign_url1" name="campaign_url" type="hidden" value="">
-                          <input id="campaign_name1" name="campaign_name" type="hidden" value="">
-                          <input id="sourceId1" name="source" type="hidden" value="">
-                          <input id="utm_medium1" name="utm_medium" type="hidden" value="">    
-                          <input type="hidden" name="orderid" value="731">
-                          <input type="hidden" name="sitename" value="My School RideJune2023">
-<button id="btnSubmitt" type="submit" class="btn btn_submit" onclick="return verify_mobile();">Submit</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+      <div style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: 20, marginBottom: 20 }}>
+        {/* Recent Transactions */}
+        <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 16 }}>
+            <span style={{ fontSize: 12, fontWeight: 800, color: C.text }}>Recent Transactions</span>
+            <span style={{ fontSize: 10, color: C.accent, fontFamily: "monospace", cursor: "pointer" }}>View all →</span>
+          </div>
+          <table style={{ width: "100%", borderCollapse: "collapse" }}>
+            <thead>
+              <tr>
+                {["ID", "Type", "Item", "Qty", "By", "Status"].map(h => (
+                  <th key={h} style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace", letterSpacing: "0.08em", textAlign: "left", paddingBottom: 10, textTransform: "uppercase", fontWeight: 700 }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {TRANSACTIONS.slice(0, 5).map((t, i) => (
+                <tr key={t.id} style={{ borderTop: `1px solid ${C.border}` }}>
+                  <td style={{ padding: "10px 0", fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>{t.id}</td>
+                  <td style={{ padding: "10px 0" }}>{txnType(t.type)}</td>
+                  <td style={{ padding: "10px 0", fontSize: 11, color: C.text, maxWidth: 140, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{t.item}</td>
+                  <td style={{ padding: "10px 0", fontSize: 11, color: C.text, fontFamily: "monospace" }}>{t.qty}</td>
+                  <td style={{ padding: "10px 0", fontSize: 10, color: C.textMid }}>{t.by}</td>
+                  <td style={{ padding: "10px 0" }}>{statusBadge(t.status)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
+        {/* Alerts Panel */}
+        <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20 }}>
+          <div style={{ fontSize: 12, fontWeight: 800, color: C.text, marginBottom: 16 }}>Stock Alerts</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {INVENTORY.filter(i => ["low_stock","critical","out_of_stock"].includes(i.status)).map(item => (
+              <div key={item.id} style={{ padding: "10px 12px", background: C.surfaceAlt, borderRadius: 8, border: `1px solid ${C.border}`, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div>
+                  <div style={{ fontSize: 11, color: C.text, fontWeight: 600, marginBottom: 2 }}>{item.name}</div>
+                  <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace" }}>{item.sku} · {item.location}</div>
+                </div>
+                <div style={{ textAlign: "right" }}>
+                  {statusBadge(item.status)}
+                  <div style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace", marginTop: 4 }}>{item.stock} left / min {item.min}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Category breakdown */}
+      <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20 }}>
+        <div style={{ fontSize: 12, fontWeight: 800, color: C.text, marginBottom: 16 }}>Inventory by Category</div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}>
+          {[
+            { name: "GPS Devices", count: 42, pct: 84, color: C.accent },
+            { name: "RFID", count: 7, pct: 35, color: C.yellow },
+            { name: "Surveillance", count: 34, pct: 68, color: C.green },
+            { name: "Cables & Acc.", count: 3, pct: 12, color: C.red },
+            { name: "Networking", count: 14, pct: 70, color: "#a78bfa" },
+            { name: "Connectivity", count: 89, pct: 100, color: C.green },
+            { name: "NVR/DVR", count: 6, pct: 60, color: C.accent },
+            { name: "Accessories", count: 0, pct: 0, color: C.red },
+          ].map((cat, i) => (
+            <div key={i}>
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
+                <span style={{ fontSize: 10, color: C.textMid }}>{cat.name}</span>
+                <span style={{ fontSize: 10, color: C.text, fontFamily: "monospace", fontWeight: 700 }}>{cat.count}</span>
+              </div>
+              {bar(cat.pct, cat.color)}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
+  );
+}
 
-     <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mt-4" data-wow-delay="600ms">
-      <div class="app__blk-item">
-        <div class="appIcon"><img class="img-fluid" src="images/driver-app.png" alt=""/></div>
-        <h5 class="text-white text-center my-3 fsize24">Driver App</h5>
+// ── Inventory View ────────────────────────────────────────────────────────────
+function InventoryView() {
+  const [filter, setFilter] = useState("all");
+  const [selected, setSelected] = useState(null);
 
-<div class="downLoadBtn" id="driver">
-          <a class="app" data-fancybox data-touch="false" href="#driverpop">iOS App</a>
-          <a class="iso" data-fancybox data-touch="false" href="#driverpop" target="_blank">Android App</a>
+  const filtered = filter === "all" ? INVENTORY : INVENTORY.filter(i => i.status === filter);
 
-<div id="driverpop">
-<h5 class="fsize22 font-weight-600 text-red mb-4">Driver App</h5>
-<form id="formID3" name="career-form" method="post"  action="Contact-myschoolride.php">
-<div class="formCareerfid">
-<div class="form-group">
-<input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*" data-errormessage-value-missing="*Name is required!" type="text" >
-</div>
-
-<div class="form-group">
-<input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30" data-errormessage-value-missing="* Email is required!" type="text" >
-</div>
-<div class="form-group">
-<input name="phone" id="phonee" maxlength="10" placeholder="Mobile*" class="form-control validate[required, custom[phone]]" data-errormessage-value-missing="* Mobile is required!" type="tel" />
-</div>
-
-<div class="form-group">
-<input name="city" class="form-control validate[required, custom[name]]" placeholder="Your City*" data-errormessage-value-missing="*city is required!" type="text" >
-</div>
-
-<div class="contact-fild-box text-center mt-4">
-<div class="form-group">
-  <input id="referrerid2" name="referrer_name" type="hidden" value="">
-                          <input id="keyword2" name="keyword" type="hidden" value="">
-                          <input id="network2" name="network" type="hidden" value="">
-                          <input id="campaign_url2" name="campaign_url" type="hidden" value="">
-                          <input id="campaign_name2" name="campaign_name" type="hidden" value="">
-                          <input id="sourceId2" name="source" type="hidden" value="">
-                          <input id="utm_medium2" name="utm_medium" type="hidden" value="">    
-                          <input type="hidden" name="orderid" value="731">
-                          <input type="hidden" name="sitename" value="My School RideJune2023">
-<button id="btnSubmitt" type="submit" class="btn btn_submit" onclick="return verify_mobile();">Submit</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+  return (
+    <div style={{ display: "flex", flex: 1, overflow: "hidden" }}>
+      <div style={{ flex: 1, padding: 28, overflowY: "auto" }}>
+        {/* Filters */}
+        <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
+          {[["all", "All Items"], ["active", "Active"], ["low_stock", "Low Stock"], ["critical", "Critical"], ["out_of_stock", "Out of Stock"]].map(([val, label]) => (
+            <button key={val} onClick={() => setFilter(val)} style={{
+              padding: "6px 14px", borderRadius: 6, border: `1px solid ${filter === val ? C.accent : C.border}`,
+              background: filter === val ? `${C.accent}15` : "transparent", color: filter === val ? C.accent : C.textMid,
+              fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "monospace",
+            }}>{label}</button>
+          ))}
+          <div style={{ marginLeft: "auto", display: "flex", gap: 8 }}>
+            <button style={{ padding: "6px 14px", borderRadius: 6, border: `1px solid ${C.border}`, background: "transparent", color: C.textMid, fontSize: 11, cursor: "pointer" }}>⤓ Export</button>
+            <button style={{ padding: "6px 14px", borderRadius: 6, border: `1px solid ${C.border}`, background: "transparent", color: C.textMid, fontSize: 11, cursor: "pointer" }}>⤒ Import</button>
+            <button style={{ padding: "6px 14px", borderRadius: 6, border: `1px solid ${C.accent}`, background: `${C.accent}15`, color: C.accent, fontSize: 11, fontWeight: 700, cursor: "pointer" }}>+ Add Item</button>
+          </div>
         </div>
 
+        {/* Table */}
+        <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, overflow: "hidden" }}>
+          <table style={{ width: "100%", borderCollapse: "collapse" }}>
+            <thead>
+              <tr style={{ background: C.surfaceAlt }}>
+                {["SKU", "Item Name", "Category", "Stock", "Reserved", "Location", "Price", "Warranty", "Status", ""].map(h => (
+                  <th key={h} style={{ padding: "12px 14px", fontSize: 9, color: C.textDim, fontFamily: "monospace", letterSpacing: "0.08em", textAlign: "left", fontWeight: 700, textTransform: "uppercase", borderBottom: `1px solid ${C.border}` }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((item, i) => (
+                <tr
+                  key={item.id}
+                  onClick={() => setSelected(selected?.id === item.id ? null : item)}
+                  style={{
+                    borderBottom: `1px solid ${C.border}`, cursor: "pointer",
+                    background: selected?.id === item.id ? `${C.accent}08` : "transparent",
+                    transition: "background 0.1s",
+                  }}
+                >
+                  <td style={{ padding: "12px 14px", fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>{item.sku}</td>
+                  <td style={{ padding: "12px 14px" }}>
+                    <div style={{ fontSize: 12, color: C.text, fontWeight: 600 }}>{item.name}</div>
+                    <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace", marginTop: 1 }}>{item.brand} · {item.model}</div>
+                  </td>
+                  <td style={{ padding: "12px 14px", fontSize: 10, color: C.textMid }}>{item.category}</td>
+                  <td style={{ padding: "12px 14px" }}>
+                    <span style={{ fontSize: 13, fontWeight: 800, color: item.stock === 0 ? C.red : item.stock < item.min ? C.amber : C.text, fontFamily: "monospace" }}>{item.stock}</span>
+                  </td>
+                  <td style={{ padding: "12px 14px", fontSize: 11, color: C.textMid, fontFamily: "monospace" }}>{item.reserved}</td>
+                  <td style={{ padding: "12px 14px" }}>
+                    <span style={{ fontSize: 10, fontFamily: "monospace", color: C.textMid }}>{item.location} / {item.rack}</span>
+                  </td>
+                  <td style={{ padding: "12px 14px", fontSize: 11, color: C.text, fontFamily: "monospace" }}>₹{item.price.toLocaleString()}</td>
+                  <td style={{ padding: "12px 14px", fontSize: 10, color: item.warranty === "-" ? C.textDim : C.textMid, fontFamily: "monospace" }}>{item.warranty}</td>
+                  <td style={{ padding: "12px 14px" }}>{statusBadge(item.status)}</td>
+                  <td style={{ padding: "12px 14px" }}>
+                    <div style={{ display: "flex", gap: 6 }}>
+                      <button style={{ padding: "3px 8px", fontSize: 9, border: `1px solid ${C.border}`, borderRadius: 4, background: "transparent", color: C.textMid, cursor: "pointer" }}>Edit</button>
+                      <button style={{ padding: "3px 8px", fontSize: 9, border: `1px solid ${C.border}`, borderRadius: 4, background: "transparent", color: C.textMid, cursor: "pointer" }}>QR</button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Detail Panel */}
+      {selected && (
+        <div style={{ width: 300, borderLeft: `1px solid ${C.border}`, background: C.surface, padding: 24, overflowY: "auto", flexShrink: 0 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
+            <div>
+              <div style={{ fontSize: 13, fontWeight: 800, color: C.text, marginBottom: 4 }}>{selected.name}</div>
+              <div style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>{selected.sku}</div>
+            </div>
+            <button onClick={() => setSelected(null)} style={{ background: "transparent", border: "none", color: C.textDim, fontSize: 18, cursor: "pointer" }}>×</button>
+          </div>
+
+          {statusBadge(selected.status)}
+
+          <div style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 14 }}>
+            {[
+              ["Item ID", selected.id],
+              ["Brand / Model", `${selected.brand} · ${selected.model}`],
+              ["Category", selected.category],
+              ["Current Stock", selected.stock],
+              ["Reserved", selected.reserved],
+              ["Available", selected.stock - selected.reserved],
+              ["Min Stock", selected.min],
+              ["Location", `${selected.location} / Rack ${selected.rack}`],
+              ["Purchase Price", `₹${selected.price.toLocaleString()}`],
+              ["Warranty Expiry", selected.warranty],
+              ["Serial/Batch", selected.serial],
+            ].map(([k, v]) => (
+              <div key={k}>
+                <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 3 }}>{k}</div>
+                <div style={{ fontSize: 12, color: C.text, fontFamily: ["Current Stock","Reserved","Available","Min Stock"].includes(k) ? "monospace" : "inherit", fontWeight: ["Current Stock"].includes(k) ? 800 : 400 }}>{v}</div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: 24, display: "flex", flexDirection: "column", gap: 8 }}>
+            {[
+              ["↑ Stock Out", C.red, `${C.red}15`],
+              ["↓ Stock In", C.green, `${C.green}15`],
+              ["↩ Return / Replace", C.amber, `${C.amber}15`],
+              ["⊕ Raise Purchase", C.accent, `${C.accent}15`],
+            ].map(([label, color, bg]) => (
+              <button key={label} style={{ padding: "9px", borderRadius: 7, border: `1px solid ${color}40`, background: bg, color, fontSize: 11, fontWeight: 700, cursor: "pointer", fontFamily: "monospace" }}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Approvals View ────────────────────────────────────────────────────────────
+function ApprovalsView() {
+  const [approvals, setApprovals] = useState(APPROVALS);
+
+  const priorityColor = { high: C.amber, critical: C.red, medium: C.accent, low: C.textDim };
+
+  const handleAction = (id, action) => {
+    setApprovals(a => a.filter(i => i.id !== id));
+  };
+
+  return (
+    <div style={{ padding: 28, overflowY: "auto", flex: 1 }}>
+      {/* Approval pipeline */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 28 }}>
+        {[
+          { label: "Sales Person Review", count: 1, color: C.textDim },
+          { label: "Store Manager", count: 1, color: C.accent },
+          { label: "Accountant", count: 1, color: C.amber },
+          { label: "Director Approval", count: 2, color: C.red },
+        ].map((stage, i) => (
+          <div key={i} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 10, padding: 16, position: "relative" }}>
+            <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 8 }}>Stage {i + 1}</div>
+            <div style={{ fontSize: 11, color: C.text, fontWeight: 700, marginBottom: 6 }}>{stage.label}</div>
+            <div style={{ fontSize: 22, fontWeight: 900, color: stage.color, fontFamily: "monospace" }}>{stage.count}</div>
+            <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace" }}>pending</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Cards */}
+      {approvals.length === 0 ? (
+        <div style={{ textAlign: "center", padding: 60, color: C.textDim, fontFamily: "monospace" }}>
+          <div style={{ fontSize: 32, marginBottom: 12, color: C.green }}>✓</div>
+          All approvals handled!
+        </div>
+      ) : (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          {approvals.map(apr => (
+            <div key={apr.id} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 14 }}>
+                <div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+                    <span style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>{apr.id}</span>
+                    <span style={{ background: `${priorityColor[apr.priority]}20`, color: priorityColor[apr.priority], fontSize: 9, fontFamily: "monospace", fontWeight: 800, padding: "2px 7px", borderRadius: 4, textTransform: "uppercase" }}>{apr.priority}</span>
+                    <span style={{ background: `${C.accent}15`, color: C.accent, fontSize: 9, fontFamily: "monospace", fontWeight: 700, padding: "2px 7px", borderRadius: 4 }}>{apr.type}</span>
+                  </div>
+                  <div style={{ fontSize: 14, fontWeight: 800, color: C.text, marginBottom: 4 }}>{apr.item}</div>
+                  <div style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>
+                    Qty: <strong style={{ color: C.text }}>{apr.qty}</strong> · Requested by: {apr.requestedBy} · {apr.date}
+                  </div>
+                </div>
+                <div style={{ textAlign: "right" }}>
+                  <div style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace", marginBottom: 4, textTransform: "uppercase", letterSpacing: "0.05em" }}>Current Stage</div>
+                  <div style={{ fontSize: 11, color: C.amber, fontFamily: "monospace", fontWeight: 700 }}>{apr.stage}</div>
+                </div>
+              </div>
+
+              {/* Workflow trail */}
+              <div style={{ display: "flex", alignItems: "center", gap: 0, marginBottom: 16, background: C.surfaceAlt, borderRadius: 8, padding: "8px 12px" }}>
+                {["Requested", "Store Review", "Accountant", "Director", "Done"].map((step, i, arr) => {
+                  const stageMap = { "Requested": 0, "Store Manager Review": 1, "Accountant Review": 2, "Director Approval": 3 };
+                  const currentIdx = stageMap[apr.stage] ?? 0;
+                  const done = i <= currentIdx;
+                  return (
+                    <>
+                      <div key={step} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <div style={{ width: 20, height: 20, borderRadius: "50%", background: done ? C.accent : C.border, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 9, color: done ? "#fff" : C.textDim, fontWeight: 800 }}>{done ? "✓" : i + 1}</div>
+                        <div style={{ fontSize: 8, color: done ? C.accent : C.textDim, fontFamily: "monospace", marginTop: 4, whiteSpace: "nowrap" }}>{step}</div>
+                      </div>
+                      {i < arr.length - 1 && <div style={{ flex: 1, height: 1, background: done && i < currentIdx ? C.accent : C.border, margin: "0 4px", marginBottom: 14 }} />}
+                    </>
+                  );
+                })}
+              </div>
+
+              <div style={{ display: "flex", gap: 10 }}>
+                <button onClick={() => handleAction(apr.id, "approve")} style={{ padding: "8px 20px", borderRadius: 7, border: `1px solid ${C.green}40`, background: `${C.green}12`, color: C.green, fontSize: 11, fontWeight: 700, cursor: "pointer" }}>✓ Approve</button>
+                <button onClick={() => handleAction(apr.id, "reject")} style={{ padding: "8px 20px", borderRadius: 7, border: `1px solid ${C.red}40`, background: `${C.red}10`, color: C.red, fontSize: 11, fontWeight: 700, cursor: "pointer" }}>✗ Reject</button>
+                <button style={{ padding: "8px 20px", borderRadius: 7, border: `1px solid ${C.border}`, background: "transparent", color: C.textMid, fontSize: 11, cursor: "pointer" }}>Request Info</button>
+                <button style={{ marginLeft: "auto", padding: "8px 16px", borderRadius: 7, border: `1px solid ${C.border}`, background: "transparent", color: C.textMid, fontSize: 11, cursor: "pointer" }}>View Details →</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Transactions View ─────────────────────────────────────────────────────────
+function TransactionsView() {
+  return (
+    <div style={{ padding: 28, overflowY: "auto", flex: 1 }}>
+      <div style={{ display: "flex", gap: 12, marginBottom: 20 }}>
+        {[["↑ Stock Out", C.red], ["↓ Stock In", C.green], ["↩ Return", C.amber], ["⇄ Replace", "#a78bfa"], ["⊕ Purchase", C.accent]].map(([label, color]) => (
+          <button key={label} style={{ padding: "8px 16px", borderRadius: 7, border: `1px solid ${color}40`, background: `${color}10`, color, fontSize: 11, fontWeight: 700, cursor: "pointer", fontFamily: "monospace" }}>
+            {label}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, overflow: "hidden" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <thead>
+            <tr style={{ background: C.surfaceAlt }}>
+              {["ID", "Type", "Item", "Qty", "Requested By", "Date", "Customer/Project", "Status", ""].map(h => (
+                <th key={h} style={{ padding: "12px 14px", fontSize: 9, color: C.textDim, fontFamily: "monospace", letterSpacing: "0.08em", textAlign: "left", fontWeight: 700, textTransform: "uppercase", borderBottom: `1px solid ${C.border}` }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {TRANSACTIONS.map((t) => (
+              <tr key={t.id} style={{ borderBottom: `1px solid ${C.border}` }}>
+                <td style={{ padding: "12px 14px", fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>{t.id}</td>
+                <td style={{ padding: "12px 14px" }}>{txnType(t.type)}</td>
+                <td style={{ padding: "12px 14px", fontSize: 11, color: C.text }}>{t.item}</td>
+                <td style={{ padding: "12px 14px", fontSize: 11, fontFamily: "monospace", color: C.text, fontWeight: 700 }}>{t.qty}</td>
+                <td style={{ padding: "12px 14px", fontSize: 10, color: C.textMid }}>{t.by}</td>
+                <td style={{ padding: "12px 14px", fontSize: 10, color: C.textDim, fontFamily: "monospace" }}>{t.date}</td>
+                <td style={{ padding: "12px 14px", fontSize: 10, color: C.textMid }}>{t.customer}</td>
+                <td style={{ padding: "12px 14px" }}>{statusBadge(t.status)}</td>
+                <td style={{ padding: "12px 14px" }}>
+                  <button style={{ fontSize: 10, color: C.accent, background: "transparent", border: "none", cursor: "pointer" }}>Details →</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
+  );
+}
 
+// ── Reports View ──────────────────────────────────────────────────────────────
+function ReportsView() {
+  const months = ["Jan", "Feb", "Mar", "Apr", "May"];
+  const stockIn = [32, 45, 28, 60, 42];
+  const stockOut = [25, 38, 20, 52, 35];
+  const maxVal = 70;
 
-     <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp  mt-4" data-wow-delay="900ms">
-      <div class="app__blk-item">
-        <div class="appIcon"><img class="img-fluid" src="images/manager-app.png" alt=""/></div>
-        <h5 class="text-white text-center my-3 fsize24">Manager App</h5>
-
-<div class="downLoadBtn" id="manager">
-          <a class="app" data-fancybox data-touch="false" href="#managerpop">iOS App</a>
-          <a class="iso" data-fancybox data-touch="false" href="#managerpop" target="_blank">Android App</a>
-
-<div id="managerpop">
-<h5 class="fsize22 font-weight-600 text-red mb-4">Manager App</h5>
-<form id="formID4" name="career-form" method="post"  action="Contact-myschoolride.php">
-<div class="formCareerfid">
-<div class="form-group">
-<input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*" data-errormessage-value-missing="*Name is required!" type="text" >
-</div>
-
-<div class="form-group">
-<input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30" data-errormessage-value-missing="* Email is required!" type="text" >
-</div>
-<div class="form-group">
-<input name="phone" id="phonee" maxlength="10" placeholder="Mobile*" class="form-control validate[required, custom[phone]]" data-errormessage-value-missing="* Mobile is required!" type="tel" />
-</div>
-
-<div class="form-group">
-<input name="city" class="form-control validate[required, custom[name]]" placeholder="Your City*" data-errormessage-value-missing="*city is required!" type="text" >
-</div>
-
-<div class="contact-fild-box text-center mt-4">
-<div class="form-group">
-  <input id="referrerid3" name="referrer_name" type="hidden" value="">
-                          <input id="keyword3" name="keyword" type="hidden" value="">
-                          <input id="network3" name="network" type="hidden" value="">
-                          <input id="campaign_url3" name="campaign_url" type="hidden" value="">
-                          <input id="campaign_name3" name="campaign_name" type="hidden" value="">
-                          <input id="sourceId3" name="source" type="hidden" value="">
-                          <input id="utm_medium3" name="utm_medium" type="hidden" value="">    
-                          <input type="hidden" name="orderid" value="731">
-                          <input type="hidden" name="sitename" value="My School RideJune2023">
-<button id="btnSubmitt" type="submit" class="btn btn_submit" onclick="return verify_mobile();">Submit</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+  return (
+    <div style={{ padding: 28, overflowY: "auto", flex: 1 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
+        {/* Bar chart */}
+        <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 24 }}>
+          <div style={{ fontSize: 12, fontWeight: 800, color: C.text, marginBottom: 4 }}>Stock Movement (Last 5 Months)</div>
+          <div style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace", marginBottom: 20 }}>Stock In vs Stock Out</div>
+          <div style={{ display: "flex", alignItems: "flex-end", gap: 12, height: 140 }}>
+            {months.map((m, i) => (
+              <div key={m} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+                <div style={{ display: "flex", gap: 3, alignItems: "flex-end", width: "100%" }}>
+                  <div style={{ flex: 1, height: `${(stockIn[i] / maxVal) * 120}px`, background: `linear-gradient(to top, ${C.green}, ${C.green}80)`, borderRadius: "3px 3px 0 0" }} />
+                  <div style={{ flex: 1, height: `${(stockOut[i] / maxVal) * 120}px`, background: `linear-gradient(to top, ${C.red}, ${C.red}80)`, borderRadius: "3px 3px 0 0" }} />
+                </div>
+                <span style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace" }}>{m}</span>
+              </div>
+            ))}
+          </div>
+          <div style={{ display: "flex", gap: 16, marginTop: 12 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}><div style={{ width: 10, height: 10, borderRadius: 2, background: C.green }} /><span style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace" }}>Stock In</span></div>
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}><div style={{ width: 10, height: 10, borderRadius: 2, background: C.red }} /><span style={{ fontSize: 9, color: C.textDim, fontFamily: "monospace" }}>Stock Out</span></div>
+          </div>
         </div>
 
+        {/* Top items by value */}
+        <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 24 }}>
+          <div style={{ fontSize: 12, fontWeight: 800, color: C.text, marginBottom: 4 }}>Top Items by Value</div>
+          <div style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace", marginBottom: 20 }}>Current stock × purchase price</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {INVENTORY.sort((a,b) => (b.stock * b.price) - (a.stock * a.price)).slice(0, 5).map((item, i) => {
+              const val = item.stock * item.price;
+              const maxV = 89 * 6500;
+              return (
+                <div key={item.id}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
+                    <span style={{ fontSize: 10, color: C.textMid }}>{item.name}</span>
+                    <span style={{ fontSize: 10, color: C.text, fontFamily: "monospace" }}>₹{(val / 100000).toFixed(1)}L</span>
+                  </div>
+                  <div style={{ height: 4, background: C.border, borderRadius: 4, overflow: "hidden" }}>
+                    <div style={{ width: `${(val / maxV) * 100}%`, height: "100%", background: [C.accent, C.green, C.amber, "#a78bfa", C.red][i], borderRadius: 4 }} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Report links */}
+      <div style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20 }}>
+        <div style={{ fontSize: 12, fontWeight: 800, color: C.text, marginBottom: 16 }}>Generate Reports</div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
+          {["Inventory Valuation", "Stock Movement", "Purchase Summary", "Item-wise Usage", "Customer Allocation", "Technician Report", "GST Report", "Monthly Summary", "Audit Logs"].map(r => (
+            <button key={r} style={{ padding: "12px 16px", borderRadius: 8, border: `1px solid ${C.border}`, background: C.surfaceAlt, color: C.textMid, fontSize: 11, fontWeight: 600, cursor: "pointer", textAlign: "left", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              {r} <span style={{ color: C.textDim, fontSize: 12 }}>↓</span>
+            </button>
+          ))}
+        </div>
       </div>
     </div>
+  );
+}
 
+// ── Vendors View ──────────────────────────────────────────────────────────────
+function VendorsView() {
+  return (
+    <div style={{ padding: 28, overflowY: "auto", flex: 1 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginBottom: 24 }}>
+        {VENDORS.map(v => (
+          <div key={v.id} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 12 }}>
+              <div style={{ width: 40, height: 40, borderRadius: 10, background: `linear-gradient(135deg, ${C.accent}30, ${C.accent}10)`, border: `1px solid ${C.accent}20`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, color: C.accent }}>◇</div>
+              {statusBadge(v.status)}
+            </div>
+            <div style={{ fontSize: 13, fontWeight: 800, color: C.text, marginBottom: 4 }}>{v.name}</div>
+            <div style={{ fontSize: 10, color: C.textDim, fontFamily: "monospace", marginBottom: 12 }}>{v.contact}</div>
+            <div style={{ fontSize: 10, color: C.textMid }}><strong style={{ color: C.text }}>{v.items}</strong> items linked</div>
+            <div style={{ marginTop: 14, display: "flex", gap: 8 }}>
+              <button style={{ flex: 1, padding: "7px", borderRadius: 6, border: `1px solid ${C.border}`, background: "transparent", color: C.textMid, fontSize: 10, cursor: "pointer" }}>View Items</button>
+              <button style={{ flex: 1, padding: "7px", borderRadius: 6, border: `1px solid ${C.accent}30`, background: `${C.accent}10`, color: C.accent, fontSize: 10, fontWeight: 700, cursor: "pointer" }}>Purchase</button>
+            </div>
+          </div>
+        ))}
+        <div style={{ border: `2px dashed ${C.border}`, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", minHeight: 160, cursor: "pointer", color: C.textDim, fontSize: 11, fontFamily: "monospace" }}>
+          + Add Vendor
+        </div>
+      </div>
+    </div>
+  );
+}
 
-  </div>
-</div>
-</div>
-</section>
+// ── Placeholder ───────────────────────────────────────────────────────────────
+function Placeholder({ title }) {
+  return (
+    <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 12, color: C.textDim }}>
+      <div style={{ fontSize: 40, opacity: 0.3 }}>⊞</div>
+      <div style={{ fontFamily: "monospace", fontSize: 12 }}>{title} module — coming soon</div>
+    </div>
+  );
+}
 
-<section class="recruiters-section py-5 position-relative">
-<div class="container">
-<div class="widget-title text-center"> 
-<span class="text-darkk d-block wow fadeInUp fsize20 mb-2" data-wow-delay="300ms">What users say about us</span>
-<h3 class="font-weight-400 wow fadeInUp" data-wow-delay="600ms"></h3>
-</div>
-</div>
-<div class="recruiters_blk wow fadeInUp mt-3" data-wow-delay="300ms">
-<div class="owl-carousel owl-theme text-center wow fadeInUp" id="recruiters-slider">
-<div class="recruiters-logo"><img class="img-fluid" src="images/1.png" alt=""/></div>
-<div class="recruiters-logo"><img class="img-fluid" src="images/2.png" alt=""/></div>
-<div class="recruiters-logo"><img class="img-fluid" src="images/3.png" alt=""/></div>
-<div class="recruiters-logo"><img class="img-fluid" src="images/4.png" alt=""/></div>
-<div class="recruiters-logo"><img class="img-fluid" src="images/5.png" alt=""/></div>
-<div class="recruiters-logo"><img class="img-fluid" src="images/6.png" alt=""/></div>
-<div class="recruiters-logo"><img class="img-fluid" src="images/7.png" alt=""/></div>
-</div>
-</div>
-</section>
-<!-- footer -->
-<footer class="footer position-relative text-center text-white">
-  <div class="ftr-shapes"><img class="img-fluid" src="images/ftr-shapes.png" alt=""/></div>
-<div class="container"><br><br>Copyright © 2025, Satcop India Pvt Ltd, All Rights Reserved.</div>
-</footer>
-<a href="#" id="back-top" title="Back To Top"></a> 
-<div class="sideNavi" id="sideNavi" style="display: none;">
-<div class="sideNavi-flex">
-<div class="sideNavi-item"><a class="text-uppercase downbg" href="#applyBox">Get a Demo</a>
-<a class="text-uppercase telphone desktop" href="tel:+918600002222">+91 860 000 2222</a>
-</div>
-</div>
-</div>
-<!-- jQuery plugins --> 
-<script src="js/bootstrap.bundle.min.js"></script> 
-<script src="css/carousel/owl.carousel.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/vanilla-tilt.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script> 
-<script src="https://www.My School Ride.com/wp-content/themes/bellB/assets/schoolanimation/lottie.js.download"></script>
-<script src="https://www.My School Ride.com/wp-content/themes/bellB/assets/schoolanimation/app_info_json_images.js.download"></script>
-<script src="js/custom.js"></script>
-<link rel="stylesheet" href="js/form/validationEngine.jquery.css">
-<script src="js/form/jquery.validationEngine.js"></script> 
-<script src="js/form/jquery.validationEngine-en.js"></script> 
-<script src="js/form/script.js"></script> 
-<script src="js/form/state.js"></script> 
-<script>
-    jQuery(document).ready(function( $ ) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
-		
-	$("#parent a").on('click',function(){
-		//alert($(this).text());
-		$('input[type=hidden][id=device]').remove();
+// ── View config ───────────────────────────────────────────────────────────────
+const PAGE_META = {
+  dashboard: { title: "Dashboard", sub: "Tuesday, 19 May 2025 · Satcop India IMS" },
+  inventory: { title: "Inventory Master", sub: "All items · 248 SKUs across 2 warehouses" },
+  transactions: { title: "Transactions", sub: "Stock movements, returns, replacements" },
+  approvals: { title: "Approval Engine", sub: "4 items pending your review" },
+  purchase: { title: "Purchase Management", sub: "Requests, orders, and vendor invoices" },
+  reports: { title: "Reports & Analytics", sub: "Export and visualize inventory data" },
+  vendors: { title: "Vendor Master", sub: "Manage suppliers and purchase contacts" },
+  users: { title: "User Management", sub: "Roles, permissions, and access control" },
+  settings: { title: "Settings", sub: "System configuration and preferences" },
+};
 
-		var aval = $(this).text();
-		$('#parentpop form#formID2').append('<input id="device" type="hidden" name="device" value="'+aval+'" />');
+// ── Root ──────────────────────────────────────────────────────────────────────
+export default function App() {
+  const [active, setActive] = useState("dashboard");
+  const meta = PAGE_META[active];
 
-	//alert('aa');
-	});
-	$("#driver a").on('click',function(){
-		//alert($(this).text());
-		$('input[type=hidden][id=device]').remove();
+  const renderView = () => {
+    switch (active) {
+      case "dashboard": return <Dashboard />;
+      case "inventory": return <InventoryView />;
+      case "transactions": return <TransactionsView />;
+      case "approvals": return <ApprovalsView />;
+      case "reports": return <ReportsView />;
+      case "vendors": return <VendorsView />;
+      default: return <Placeholder title={meta?.title} />;
+    }
+  };
 
-		var aval = $(this).text();
-		$('#driverpop form#formID3').append('<input id="device" type="hidden" name="device" value="'+aval+'" />');
-
-	//alert('aa');
-	});
-	$("#manager a").on('click',function(){
-		//alert($(this).text());
-		$('input[type=hidden][id=device]').remove();
-
-		var aval = $(this).text();
-		$('#managerpop form#formID4').append('<input id="device" type="hidden" name="device" value="'+aval+'" />');
-
-	//alert('aa');
-	});
-    });
-</script>
-
-
-<script>
-    (function() {
-        var whatsappNumber = "916363154463"; // Replace with your number
-        var message = "Hello! I'm interested in your services."; // Default message
-        var chatWidget = document.createElement("div");
-        chatWidget.innerHTML = `
-            <a href="https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}" 
-               target="_blank" style="position: fixed; bottom: 20px; left: 20px; 
-               background-color: #25D366; color: white; padding: 12px 15px; 
-               font-size: 14px; font-weight: bold; border-radius: 50px; 
-               text-decoration: none; display: flex; align-items: center; 
-               box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
-                <img src="images/Whatsapp.png" 
-                     width="40px" style="margin-right: 10px;"> Talk to us.
-            </a>
-        `;
-        document.body.appendChild(chatWidget);
-    })();
-</script>
-
-
-<script>
-  grecaptcha.ready(function() {
-    grecaptcha.execute('6LcXywkrAAAAAFG81MXm6kQQNd5qwBigOp2wgdU8', {action: 'submit'}).then(function(token) {
-      document.getElementById('g-recaptcha-response').value = token;
-    });
-  });
-</script>
-
-<script type="text/javascript">
-_linkedin_partner_id = "9560281";
-window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-</script><script type="text/javascript">
-(function(l) {
-if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-window.lintrk.q=[]}
-var s = document.getElementsByTagName("script")[0];
-var b = document.createElement("script");
-b.type = "text/javascript";b.async = true;
-b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-s.parentNode.insertBefore(b, s);})(window.lintrk);
-</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9560281&fmt=gif" />
-</noscript>
-
-</body>
-</html>
+  return (
+    <div style={{ display: "flex", height: "100vh", background: C.bg, color: C.text, fontFamily: "'DM Sans', 'Segoe UI', sans-serif", overflow: "hidden" }}>
+      <Sidebar active={active} setActive={setActive} role="DIRECTOR" />
+      <div style={{ flex: 1, display: "flex", flexDirection: "column", overflow: "hidden" }}>
+        <TopBar title={meta?.title} sub={meta?.sub} />
+        <div style={{ flex: 1, display: "flex", overflow: "hidden" }}>
+          {renderView()}
+        </div>
+      </div>
+    </div>
+  );
+}
